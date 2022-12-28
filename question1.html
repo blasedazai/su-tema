@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soru1</title>
+    <link rel="stylesheet" href="Content/Styles/Base.css" />
+  </head>
+  <body>
+    <section class="section-01">
+      <div class="c-wrapper">
+        <div class="left-side">
+          <div class="a-item-01">
+            <p class="a-item-01-A">
+              Duş sürenizi 5 dakika ile sınırlı tuttuğunuzda, her duşta yaklaşık
+              55 litre su tasarrufu yaparsınız.
+            </p>
+            <p class="a-item-01-B">Ortalama duş sürem sadece 5 dakikadır.</p>
+          </div>
+          <div class="a-item-02">
+            <div class="a-item-02-A">
+              <div class="a-item-02-A-01">
+                  <input type="radio" name="radio" value="Evet" id="answer-yes">
+                  <label for="answer-yes">Evet</label>
+              </div>
+              <div class="a-item-02-A-01">
+                  <input type="radio" name="radio" value="Hayır" id="answer-no">
+                  <label for="answer-no">Hayır</label>
+              </div>
+          </div>
+            <div class="a-item-02-B">
+              <div class="a-item-input">
+                <button id="next-button" onclick="Filter.Actions.nextPage()">Sonraki soru</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="b-item">
+            <img src="Content/images/suTemaImg1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var question = 1;
+    </script>
+    <script src="Content/Js/question.js"></script>
+  </body>
+</html>

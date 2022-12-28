@@ -1,0 +1,58 @@
+@media all and (max-width: 767px) {
+  .section-0 {
+    padding: 48px 0;
+  }
+}
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 1320px) {
+  .section-02 {
+    padding-top: 100px;
+  }
+  .section-02 .c-wrapper .result-page {
+    display: flex;
+    justify-content: center;
+  }
+  .section-02 .c-wrapper .result-page .a-item-01 {
+    width: 100px;
+    height: 100px;
+  }
+  .section-02 .c-wrapper .result-page .a-item-01 img {
+    border: 2px solid darkcyan;
+    border-radius: 20px;
+    width: 700px;
+  }
+  .section-02 .c-wrapper .result-page .a-item-02 .a-item-02-A {
+    margin-top: 15px;
+    font-family: "Syne";
+    font-size: 17px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+  }
+  .section-02 .c-wrapper .result-page .a-item-02 .a-item-02-B {
+    margin-top: 15px;
+    font-family: "Syne";
+    font-size: 17px;
+    line-height: 10px;
+    text-align: center;
+    color: #000000;
+    text-shadow: -5px 5px 0px #ffffff;
+  }
+  .section-02 .c-wrapper .result-page .a-item-03 img {
+    border: 2px solid darkcyan;
+    border-radius: 20px;
+  }
+  .section-02 .c-wrapper .result-page .a-item-03 .a-item-03-A {
+    width: 250px;
+    height: 30px;
+    border: 2px solid darkcyan;
+    border-radius: 15px;
+    opacity: 0.8;
+    transition: opacity 0.25s;
+    cursor: pointer;
+    margin: 20px 128px;
+  }
+  .section-02 .c-wrapper .result-page .a-item-03 .a-item-03-A:hover {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Section02.css.map */

@@ -1,0 +1,119 @@
+@import "../../Base/Global.scss";
+@import "../../Base/Colour.scss";
+
+/* Common xs1, xs2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+  .section-01 {
+    padding: 48px 0;
+
+    .c-wrapper {
+    }
+  }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+  .section-01 {
+    .c-wrapper {
+    }
+  }
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+  .section-01 {
+    padding: 200px 0;
+    .c-wrapper {
+      display: flex;
+      .left-side {
+        flex: 1;
+        .a-item-01 {
+          padding: 50px;
+          .a-item-01-A {
+            margin-bottom: 30px;
+            font-family: "Syne";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+          }
+          .a-item-01-B {
+            font-family: "Syne";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #000000;
+            text-shadow: -5px 5px 0px #ffffff;
+          }
+        }
+        .a-item-02 {
+          margin-top: 90px;
+          display: flex;
+          align-items: center;
+          padding: 40px 20px;
+          justify-content: space-between;
+          .a-item-02-A {
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+            .a-item-02-A-01 {
+              padding: 3px 9px;
+              width: 80px;
+              height: 30px;
+              border: 2px solid darkcyan;
+              border-radius: 10px;
+              label {
+                font-family: "Syne";
+                font-weight: 400;
+                overflow: hidden;
+                border-radius: 24px;
+                opacity: 0.8;
+                transition: opacity 0.25s;
+                cursor: pointer;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          .a-item-02-B {
+            display: flex;
+            justify-content: space-around;
+            width: 250px;
+            .a-item-input {
+              padding: 3px 9px;
+              width: 100px;
+              height: 30px;
+              border: 2px solid darkcyan;
+              border-radius: 10px;
+              font-family: "Syne";
+              font-weight: 400;
+              button {
+                overflow: hidden;
+                border-radius: 24px;
+                opacity: 0.8;
+                transition: opacity 0.25s;
+                cursor: pointer;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+      > .right-side {
+        .b-item {
+          img {
+            border: 2px solid darkcyan;
+            border-radius: 20px;
+            
+          }
+        }
+      }
+    }
+  }
+}
