@@ -27,12 +27,18 @@ var Filter = {
         localStorage.setItem("question" + question, "false");
       }
       window.location.href = "/question" + (question + 1) + ".html";
-      if (question == 5) {
-        window.location.href = "/result.html";
-      }
     },
     lastPage: () => {
       window.location.href = "/question" + (question - 1) + ".html";
+    },
+    switchResultsPage: () => {
+        var forTrue = Filter.Elements.forTrue;
+        if (forTrue.checked) {
+          localStorage.setItem("question" + question, "true");
+        } else {
+          localStorage.setItem("question" + question, "false");
+        }
+        window.location.href = "/result.html";
     },
     finishTest: () => {
       for(let i=1; i<=5; i++){
@@ -55,14 +61,8 @@ var Filter = {
       var img=document.createElement("img");
       img.setAttribute("src","Content/images/resultPage2.png")
       Filter.Elements.imgArea.appendChild(img)
-
-      printResult.innerText= 5+" "+"sorudan"+" "+ lenghtTrue+" "+"tanesine evet,"+" "+lenghtFalse+" "+"tanesine hayır cevabını verdiniz."
-      if(Filter.Status.Puan<=40){
-        puan.innerText= "Puanınız"+" "+Puan+" "+"olduğu ve 40'dan küçük olduğu için su gönüllüsü olamazsınız";
-      }
-      else{
-        "Puanınız 30 üstünde olduğu için su gönüllüsü olabilirsiniz"
-      }
+      printResult.innerText= 5+" "+"sorudan"+" "+ lenghtTrue+" "+"tanesine evet,"+" "+lenghtFalse+" "+"tanesine hayır cevabını verdiniz.";
+      puan.innerText= "Puanınız:"+" "+Puan;
       Filter.Actions.deleteLastValue();
     },
     deleteLastValue:()=>{
